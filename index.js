@@ -15,7 +15,7 @@ app.use('/api/auth/register', require('./routes/register'));
 app.use('/api/notes', require('./routes/notes'));
 app.use('/api/user', require('./routes/user'));
 
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.static(path.join(__dirname, './client/dist')));
 
 app.listen(port, ()=>{
     console.log(`Backend Server listing on: ${port}`);
