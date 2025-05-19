@@ -1,0 +1,92 @@
+nav{
+    width: 100%;
+    background-color: #f5fff4d6;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #aac8a73a;
+}
+
+.icon-notes{
+    display: flex;
+    align-items: center;
+}
+
+.icon-notes img{
+    width: 50px;
+    height: 50px;
+    padding-left: 15px;
+    filter: drop-shadow(0px 2px 3px #aac8a7c3);
+}
+
+.icon-notes-text{
+    color: rgb(170, 200, 167);
+    padding: 10px;
+    font-size: 23px;
+}
+
+.profile-username-text{
+    color: rgb(170, 200, 167);
+    padding: 10px;
+    font-size: 21px;
+}
+
+.note-add{
+    min-width: 150px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 8px;
+    border: 1px solid #aac8a797;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px 0px #aac8a797;
+}
+
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.note-add.createNote{
+    position: relative;
+    width: 60%;
+    
+    background-color: white;
+    z-index: 10;
+    outline: none;
+}
+
+.create-note-title-placeholder:empty:before {
+    content: "Title";
+    color: #c2c2c2;
+}
+
+.create-note-content-placeholder:empty:before {
+    content: "Content";
+    color: #c2c2c2;
+}
+
+
+#user-profile-img{
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 2px 3px #aac8a7c3);
+}
+
+@media only screen and (max-width: 340px) {
+    .icon-notes-text{
+        font-size: 13px;
+    }
+    .profile-username-text{
+        font-size: 11px;
+    }
+
+    .icon-notes img, #user-profile-img{
+        width: 35px;
+        height: 35px;
+        padding-left: 15px;
+        filter: drop-shadow(0px 2px 3px #aac8a7c3);
+    }
+}
